@@ -25,6 +25,10 @@ app.get('/', function (req, res) {
    res.render('index');
 });
 
+app.get('/add', function (req, res) {
+   res.render('index');
+});
+
 app.use(function (err, req, res, next) {
     console.error(err);
     res.status(500).send(err.message);
